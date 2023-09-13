@@ -520,14 +520,14 @@ header {
   }
 }
 /* Media query for screens 375px or less */
-@media only screen and (min-width: 375px) {
-  .divider-part {
+/* @media only screen and (min-width: 375px) { */
+/* .divider-part {
     text-align: center;
     padding: 10px;
     margin-left: -55px;
     /* background-color: #855fb1; */
-  }
-  .divider-part.content {
+
+/* .divider-part.content {
     padding-left: -30px;
     align-content: center;
 
@@ -535,14 +535,14 @@ header {
   }
   .divider-part img {
     max-width: 200px; /* Ensure the image fits the screen width */
-    height: 80px;
+/* height: 80px;
     display: block;
     justify-content: center;
     margin: 0 auto; /* Center the image horizontally */
-  }
+/*   
   .button-container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-}
+  */
