@@ -406,32 +406,6 @@ header {
   column-gap: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  .divider {
-    display: inline;
-    width: 100%;
-  }
-
-  .main-content {
-    width: 100%;
-  }
-
-  .rectangle {
-    width: 100%;
-    /* flex-direction: column; */
-    height: auto;
-    flex-wrap: wrap;
-  }
-
-  .rectangle-part {
-    width: 100%;
-  }
-
-  .footer-background {
-    flex-direction: column;
-  }
-}
-
 /* Logo centering within media query */
 @media only screen and (max-width: 768px) {
   header {
@@ -519,30 +493,54 @@ header {
     }
   }
 }
-/* Media query for screens 375px or less */
-/* @media only screen and (min-width: 375px) { */
-/* .divider-part {
-    text-align: center;
-    padding: 10px;
-    margin-left: -55px;
-    /* background-color: #855fb1; */
 
-/* .divider-part.content {
-    padding-left: -30px;
-    align-content: center;
-
-    order: 2;
-  }
-  .divider-part img {
-    max-width: 200px; /* Ensure the image fits the screen width */
-/* height: 80px;
-    display: block;
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  header {
+    display: flex;
     justify-content: center;
-    margin: 0 auto; /* Center the image horizontally */
-/*   
+    align-items: center;
+    height: auto; /* Adjust the height as needed */
+  }
+  .logo {
+    position: static;
+    transform: none;
+    margin-top: 48px;
+  }
+  .divider {
+    margin-left: -50px;
+    position: relative;
+    top: -60px;
+  }
   .button-container {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
-  */
+  .button-what-is-it {
+    margin-left: 30px;
+    margin-top: -50px;
+    /* margin-bottom: 5000px; */
+  }
+  .lalipop1 {
+    margin-top: 150px;
+  }
+  .rectangle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 300px;
+  }
+  .rectangle-part {
+    width: 190px;
+    height: 100;
+  }
+  .footer-text-center {
+    text-align: center;
+    margin-bottom: 100px;
+    padding-left: 100px;
+    width: 350px;
+    height: 1px;
+  }
+  .footer-text-left {
+    margin-top: 50px;
+    /* margin-bottom: 1px; */
+    padding-bottom: -10px;
+  }
+}
